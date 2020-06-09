@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="#">Weather</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Metar<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">More options</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://manuelmoauro17.neocities.org/" target="_blank">Covid-19 visualizer</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input id="inputUser" class="form-control mr-sm-2" type="text" placeholder="Search by city name"
+          aria-label="Search" />
+        <button id="obtener" class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </nav>
+
+  <article class="wrapper">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img id="imgWeather" src="" class="card-img" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <h1 id="title"></h1>
+          <div class="align">
+            <div class="card-body">
+              <p id="temperature" class="temperature"></p>
+              <p id="thermalSensation" class="thermalSensation"></p>
+              <p id="liteDescription" class="liteDescription"></p>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="resalt">Pressure <span id="pressure"></span></td>
+                </tr>
+                <tr>
+                  <td class="noResalt">Humidity <span id="humidity"></span></td>
+                </tr>
+                <tr>
+                  <td class="resalt">Wind <span id="wind"></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#userWeather {
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 50%;
+    height: 300px;
+}
+#title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#userWeatherDatos {
+    height: 100%;
+    margin-top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.temperature {
+    color: #DB9530;
+    font-family: sans-serif;
+    font-size: 46px;
+    font-weight: 400;
+    margin: 0;
+}
+.thermalSensation {
+    color: #C3C3C5;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+.liteDescription {
+    color: #767676;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+div .card-body {
+    padding: 0;
+}
+div .align {
+    display: flex;
+    justify-content: center;
+}
+table {
+    margin: 20px 20px 20px 0;
+    border: 1px solid #C3C3C5;
+
+}
+.resalt {
+    background-color: #DEDEDE;
+}
+.noResalt {
+    background-color: #F9F9F9;
+}
