@@ -7,6 +7,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+#section {
+    background-color: rgb(123, 133, 145);
+}
+#title {
+    padding-top: 10px;
+}
 #imgWeather {
     height: 179px;
     width: 150px;
@@ -31,6 +37,9 @@ body {
     font-size: 20px;
     font-weight: 700;
     margin: 0;
+}
+#liteDescription {
+    color: #464343;
 }
 div .card-body {
     padding-left: 0;

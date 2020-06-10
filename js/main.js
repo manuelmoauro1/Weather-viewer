@@ -15,24 +15,29 @@ document.addEventListener("DOMContentLoaded", function () {
         let json = await response.json();
         document.getElementById("imgWeather").src = "";
         if (json.weather[0].description == "clear sky") {
-          document.getElementById("imgWeather").src = "images/sunny.png";
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/01d@4x.png";
         } else if (json.weather[0].description == "overcast clouds") {
-          document.getElementById("imgWeather").src = "images/overcast.png";
-        } else if (
-          json.weather[0].description == "light rain" ||
-          json.weather[0].description == "light intensity shower rain") {
-          document.getElementById("imgWeather").src = "images/lightrain.png";
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/04d@4x.png";
         } else if (json.weather[0].description == "mist") {
-          document.getElementById("imgWeather").src = "images/mist.png";
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/50d@4x.png";
         } else if (json.weather[0].description == "broken clouds") {
-          document.getElementById("imgWeather").src = "images/broken.png";
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/04d@4x.png";
         } else if (json.weather[0].description == "few clouds") {
-          document.getElementById("imgWeather").src = "images/few.png";
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/02d@4x.png";
         } else if (json.weather[0].description == "light intensity drizzle rain") {
           document.getElementById("imgWeather").src = "images/lightintensity.png";
         } else if (json.weather[0].description == "scattered clouds") {
-          document.getElementById("imgWeather").src = "images/scatered.png";
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/03d@4x.png";
+        } else if(json.weather[0].main == "Rain") {
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/10d@4x.png";
+        } else if(json.weather[0].main == "Thunderstorm") {
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/011d@4x.png";
+        } else if(json.weather[0].main == "Snow") {
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/013d@4x.png";
+        } else if(json.weather.main == "Drizzle") {
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/09d@4x.png"
         }
+
         document.getElementById("title").innerHTML =
           json.name + ", " + json.sys.country;
         document.getElementById("temperature").innerHTML =
@@ -71,23 +76,27 @@ document.addEventListener("DOMContentLoaded", function () {
         let json = await response.json();
         document.getElementById("imgWeather").src = "";
         if (json.weather[0].description == "clear sky") {
-          document.getElementById("imgWeather").src = "images/sunny.png";
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/01d@4x.png";
         } else if (json.weather[0].description == "overcast clouds") {
-          document.getElementById("imgWeather").src = "images/overcast.png";
-        } else if (json.weather[0].description == "light rain" || json.weather[0].description == "light intensity shower rain") {
-          document.getElementById("imgWeather").src = "images/lightrain.png";
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/04d@4x.png";
         } else if (json.weather[0].description == "mist") {
-          document.getElementById("imgWeather").src = "images/.png";
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/50d@4x.png";
         } else if (json.weather[0].description == "broken clouds") {
-          document.getElementById("imgWeather").src = "images/broken.png";
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/04d@4x.png";
         } else if (json.weather[0].description == "few clouds") {
-          document.getElementById("imgWeather").src = "fimages/ew.png";
-        } else if (
-          json.weather[0].description == "light intensity drizzle rain"
-        ) {
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/02d@4x.png";
+        } else if (json.weather[0].description == "light intensity drizzle rain") {
           document.getElementById("imgWeather").src = "images/lightintensity.png";
         } else if (json.weather[0].description == "scattered clouds") {
-          document.getElementById("imgWeather").src = "images/scatered.png";
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/03d@4x.png";
+        } else if(json.weather[0].main == "Rain") {
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/10d@4x.png";
+        } else if(json.weather[0].main == "Thunderstorm") {
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/011d@4x.png";
+        } else if(json.weather[0].main == "Snow") {
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/013d@4x.png";
+        } else if(json.weather.main == "Drizzle") {
+          document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/09d@4x.png"
         }
         document.getElementById("title").innerHTML = json.name + ", " + json.sys.country;
         document.getElementById("temperature").innerHTML = json.main.temp + "°C";
