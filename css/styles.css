@@ -60,3 +60,39 @@ table {
 .noResalt {
     background-color: #F9F9F9;
 }
+/*
+Finish index page, and start the aviation page
+*/
+
+.airportICAO {
+    text-align: center;
+}
+.wrapperAviation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.descriptionMetar {
+    width: 30%;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+.descriptionTaf {
+    width: 30%;
+    border: 1px solid black;
+}
+.description {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+}
+.alignAviationTable {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.spanDescription {
+    font-weight: bold;
+}
