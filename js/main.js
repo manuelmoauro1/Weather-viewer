@@ -5,11 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
   userLocation();
 
   async function obtenerSegunUbicacion(latitude, longitude) {
-    const url = "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&appid=667de518308564633d6ab9389577a4bf&units=metric";
+    const url = "http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&appid=667de518308564633d6ab9389577a4bf&units=metric";
 
     try {
       let response = await fetch(url);
       if (response.ok) {
+        document.getElementById("hidden").classList.remove("hidden");
+        document.getElementById("hidden").classList.add("wrapper");
         let json = await response.json();
         document.getElementById("imgWeather").src = "";
         if (json.weather[0].description == "clear sky") {
@@ -62,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function obtenerSegunInput() {
     let inputUser = document.getElementById("inputUser").value;
-    const url = "http://api.openweathermap.org/data/2.5/weather?q=" +inputUser +"&appid=667de518308564633d6ab9389577a4bf&units=metric";
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=" + inputUser + "&appid=667de518308564633d6ab9389577a4bf&units=metric";
     try {
       let response = await fetch(url);
       if (response.ok) {
@@ -98,8 +100,5 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (error) {
       console.log(error);
     }
-  }
-  function agregarImagenes() {
-    
   }
 });

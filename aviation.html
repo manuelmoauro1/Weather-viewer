@@ -1,83 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/aviation.js"></script>
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <title>Aviation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Basic weather viewer, with some pretty features por pilots. Yoou can read a metar, a taf, and collect some airport information.">
+  <meta name="keywords" content="Weather, clima, pilots, meta, taf, pirep, airports, planes, aerodrome">
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/aviation.js"></script>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <title>Aviation</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-        <a class="navbar-brand" href="index.html">Weather</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a id="linkAviation" class="nav-link" href="aviation.html">Aviation<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">More options</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://manuelmoauro17.neocities.org/" target="_blank">Covid-19 visualizer</a>
-            </li>
-          </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input id="inputUser" class="form-control mr-sm-2" type="text" placeholder="Search by airport ICAO"
-              aria-label="Search">
-            <button id="obtener" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
-          </form>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="index.html">Weather</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a id="linkAviation" class="nav-link" href="aviation.html">Aviation<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">More options</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://manuelmoauro17.neocities.org/" target="_blank">Covid-19 visualizer</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input id="inputUser" class="form-control mr-sm-2" type="text" placeholder="Search by airport ICAO"
+          aria-label="Search">
+        <button id="obtener" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+      </form>
+    </div>
+  </nav>
 
-    <h1 id="airportICAO" class="airportICAO"></h1>
-    <article class="wrapperAviation">
-        <div class="descriptionMetar">
-            <h1 class="description">Metar description</h1>
-            <div class="alignAviationTable">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Wind <span class="spanDescription" id="metarDescriptionWind"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Pressure <span class="spanDescription" id="metarDescriptionPressure"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Temperature <span class="spanDescription" id="metarDescriptionTemperature"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Dew point <span class="spanDescription" id="metarDescriptionDew"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Visibility <span class="spanDescription" id="metarDescriptionVisibility"></span></td>
-                        </tr>
-                        <tr>
-                            <td class="spanDescription" id="metarDescriptionWx"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p id="metar" class="spanDescription"></p>
-            
-
-        </div>
-        <div class="descriptionTaf">
-            <h1 class="description">Taf description</h1>
-
-
-        </div>
-        
-    </article>
+  <article class="wrapperAviation">
+    <section class="descriptionMetar">
+      <h1 class="description">Metar description</h1>
+      <div class="alignAviationTable">
+        <table>
+          <tbody>
+            <tr class="trAviation">
+              <td>Wind <span class="spanDescription" id="metarDescriptionWind"></span></td>
+            </tr>
+            <tr class="trAviation">
+              <td>Pressure <span class="spanDescription" id="metarDescriptionPressure"></span></td>
+            </tr>
+            <tr class="trAviation">
+              <td>Temperature <span class="spanDescription" id="metarDescriptionTemperature"></span></td>
+            </tr>
+            <tr class="trAviation">
+              <td>Dew point <span class="spanDescription" id="metarDescriptionDew"></span></td>
+            </tr>
+            <tr id="trVisibility">
+              <td>Visibility <span class="spanDescription" id="metarDescriptionVisibility"></span></td>
+            </tr>
+            <tr>
+              <td class="spanDescription" id="metarDescriptionWx"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p id="metar" class="spanDescription"></p>
+    </section>
+    <section class="descriptionTaf">
+      <h1 class="description">Taf description</h1>
+      <div class="alignAviationTable">
+        <table>
+          <tbody>
+            <tr class="trAviation">
+              <td>This TAF is availabe<span class="spanDescription" id="tafDate"></span></td>
+            </tr>
+            <tr class="trAviation">
+              <td>Wind <span class="spanDescription" id="tafWind"></span></td>
+            </tr>
+            <tr class="trAviation">
+              <td>Visibility <span class="spanDescription" id="tafVisibility"></span></td>
+            </tr>
+            <tr class="trAviation">
+              <td>Max temperature<span class="spanDescription" id="maxTemp"></span></td>
+            </tr>
+            <tr id="trAviation">
+              <td>Min temperature <span class="spanDescription" id="minTemp"></span></td>
+            </tr>
+            <tr id="trAviation">
+              <td id="probabilityTaf"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p id="taf" class="spanDescription"></p>
+    </section>
+    <section class="airportInformation">
+      <h1 class="description">Airport information</h1>
+      <h2 id="airportICAO" class="airportICAO"></h2>
+      <div class="alignList">
+        <ul class="list">
+          <li id="elevation"></li>
+          <li id="name"></li>
+          <li id="icao"></li>
+          <li id="iata"></li>
+          <li id="type"></li>
+          <li id="runwaysClass" class="hidden">Runways:<span id="runways"></span></li>
+        </ul>
+      </div>
+    </section>
+  </article>
 </body>
+
 </html>
