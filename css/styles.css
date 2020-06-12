@@ -32,15 +32,13 @@ body {
     margin: 0;
 }
 .liteDescription {
-    color: #767676;
+    color: #464343;
     font-family: sans-serif;
     font-size: 20px;
     font-weight: 700;
     margin: 0;
 }
-#liteDescription {
-    color: #464343;
-}
+
 div .card-body {
     padding-left: 0;
     padding-right: 10px;
@@ -64,6 +62,41 @@ table {
 }
 .hidden {
     display: none;
+}
+.sevenDays, .btn-7 {
+    display: flex;
+    justify-content: center;
+}
+.btn-7 {
+    margin-bottom: 10px;
+}
+#padding {
+    padding: 0;
+}
+.imgSeven {
+    height: 100px;
+    width: 100px;
+}
+.informationSeven {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.maxMin {
+    display: flex;
+    flex-direction: column;
+}
+.maxT {
+    margin: 0;
+    color: #1F1F1F;
+    font-size: 20px;
+    font-weight: 300;
+}
+.minT {
+    color: #ADA6A2;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 /*
@@ -125,6 +158,9 @@ Finish index page, and start the aviation page
         display: flex;
         justify-content: center;
     }
+    .informationSeven {
+        width: 95%;
+    }
     /*
     Finish index page, start aviation page
     */
@@ -146,4 +182,5 @@ Finish index page, and start the aviation page
         width: 75%;
         margin-right: 10px;
     }
+
 }
