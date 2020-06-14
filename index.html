@@ -12,12 +12,28 @@
   <script src="js/main.js"></script>
   <script src="js/tawk.js"></script>
   <!-- CSS only -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- JS, Popper.js, and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body id="body">
@@ -80,6 +96,9 @@
         </div>
       </div>
     </section>
+    <div id="mapid">
+
+    </div>
   </article>
   <div class="btn-7">
     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
@@ -97,82 +116,84 @@
           </div>
           <p class="liteDescription" id="liteDescriptionSeven1"></p>
           <p id="humiditySeven1"></p>
-        </div>
       </div>
-      <div class="collapse" id="collapseExample">
-        <div class="card card-body" id="padding">
-          <div class="informationSeven">
-            <img id="sevenImg2" src="" alt="">
-            <div class="maxMin">
-              <p id="maxT2"></p>
-              <p id="minT2"></p>
-            </div>
-            <p class="liteDescription" id="liteDescriptionSeven2"></p>
-            <p id="humiditySeven2"></p>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body" id="padding">
+        <div class="informationSeven">
+          <img id="sevenImg2" src="" alt="">
+          <div class="maxMin">
+            <p id="maxT2"></p>
+            <p id="minT2"></p>
           </div>
-        </div>
-        <div class="collapse" id="collapseExample">
-          <div class="card card-body" id="padding">
-            <div class="informationSeven">
-              <img id="sevenImg3" src="" alt="">
-              <div class="maxMin">
-                <p id="maxT3"></p>
-                <p id="minT3"></p>
-              </div>
-              <p class="liteDescription" id="liteDescriptionSeven3"></p>
-              <p id="humiditySeven3"></p>
-            </div>
+          <p class="liteDescription" id="liteDescriptionSeven2"></p>
+          <p id="humiditySeven2"></p>
+      </div>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body" id="padding">
+        <div class="informationSeven">
+          <img id="sevenImg3" src="" alt="">
+          <div class="maxMin">
+            <p id="maxT3"></p>
+            <p id="minT3"></p>
           </div>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body" id="padding">
-              <div class="informationSeven">
-                <img id="sevenImg4" src="" alt="">
-                <div class="maxMin">
-                  <p id="maxT4"></p>
-                  <p id="minT4"></p>
-                </div>
-                <p class="liteDescription" id="liteDescriptionSeven4"></p>
-                <p id="humiditySeven4"></p>
-              </div>
-            </div>
-            <div class="collapse" id="collapseExample">
-              <div class="card card-body" id="padding">
-                <div class="informationSeven">
-                  <img id="sevenImg5" src="" alt="">
-                  <div class="maxMin">
-                    <p id="maxT5"></p>
-                    <p id="minT5"></p>
-                  </div>
-                  <p class="liteDescription" id="liteDescriptionSeven5"></p>
-                  <p id="humiditySeven5"></p>
-                </div>
-              </div>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body" id="padding">
-                  <div class="informationSeven">
-                    <img id="sevenImg6" src="" alt="">
-                    <div class="maxMin">
-                      <p id="maxT6"></p>
-                      <p id="minT6"></p>
-                    </div>
-                    <p class="liteDescription" id="liteDescriptionSeven6"></p>
-                    <p id="humiditySeven6"></p>
-                  </div>
-                </div>
-                <div class="collapse" id="collapseExample">
-                  <div class="card card-body" id="padding">
-                    <div class="informationSeven">
-                      <img id="sevenImg7" src="" alt="">
-                      <div class="maxMin">
-                        <p id="maxT7"></p>
-                        <p id="minT7"></p>
-                      </div>
-                      <p class="liteDescription" id="liteDescriptionSeven7"></p>
-                      <p id="humiditySeven7"></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <p class="liteDescription" id="liteDescriptionSeven3"></p>
+          <p id="humiditySeven3"></p>
+      </div>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body" id="padding">
+        <div class="informationSeven">
+          <img id="sevenImg4" src="" alt="">
+          <div class="maxMin">
+            <p id="maxT4"></p>
+            <p id="minT4"></p>
+          </div>
+          <p class="liteDescription" id="liteDescriptionSeven4"></p>
+          <p id="humiditySeven4"></p>
+      </div>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body" id="padding">
+        <div class="informationSeven">
+          <img id="sevenImg5" src="" alt="">
+          <div class="maxMin">
+            <p id="maxT5"></p>
+            <p id="minT5"></p>
+          </div>
+          <p class="liteDescription" id="liteDescriptionSeven5"></p>
+          <p id="humiditySeven5"></p>
+      </div>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body" id="padding">
+        <div class="informationSeven">
+          <img id="sevenImg6" src="" alt="">
+          <div class="maxMin">
+            <p id="maxT6"></p>
+            <p id="minT6"></p>
+          </div>
+          <p class="liteDescription" id="liteDescriptionSeven6"></p>
+          <p id="humiditySeven6"></p>
+      </div>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body" id="padding">
+        <div class="informationSeven">
+          <img id="sevenImg7" src="" alt="">
+          <div class="maxMin">
+            <p id="maxT7"></p>
+            <p id="minT7"></p>
+          </div>
+          <p class="liteDescription" id="liteDescriptionSeven7"></p>
+          <p id="humiditySeven7"></p>
+      </div>
+    </div>
+  </div>
+
+
+
 </body>
 
 </html>

@@ -149,6 +149,13 @@ Finish index page, and start the aviation page
     list-style: none;
     padding: 0;
 }
+#mapid {
+    border-radius: 10px;
+    margin-bottom: 16px;
+    margin-left: 10px;
+    width: 471px;
+    height: 243px;
+}
 @media only screen and (max-width: 768px) {
     #imgWeather {
         height: 100px;
@@ -157,6 +164,16 @@ Finish index page, and start the aviation page
     div .col-md-4 {
         display: flex;
         justify-content: center;
+    }
+    #mapid {
+        border-radius: 10px;
+        margin-bottom: 16px;
+        width: 400px;
+        height: 243px;
+    }
+    #hidden {
+        display: flex;
+        flex-direction: column;
     }
     .informationSeven {
         width: 95%;
