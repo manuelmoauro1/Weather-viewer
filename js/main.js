@@ -97,10 +97,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
   function mapa(latitude, longitude) {
-    var mymap = L.map('mapid').setView([latitude, longitude], 13);
-    L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
-      maxZoom: 20,
-      subdomains:['mt0','mt1','mt2','mt3']
+    var mymap = L.map('mapid').setView([latitude, longitude], 6);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFudWVsbW9hdXJvMSIsImEiOiJja2JmYXg4NjEwN2ZrMnRwdjRrcXhqZG95In0.Le_kSjcJI_74rOvbQiwZ_Q',{
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      subdomains:['mt0','mt1','mt2','mt3'],
+      maxZoom: 18,
+      id: 'mapbox/streets-v11',
+      tileSize: 512,
+      zoomOffset: -1
     }).addTo(mymap);
     L.marker([latitude, longitude]).addTo(mymap);
     mymap.on('click', onMapClick);
