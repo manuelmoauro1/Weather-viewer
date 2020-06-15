@@ -38,7 +38,6 @@ body {
     font-weight: 700;
     margin: 0;
 }
-
 div .card-body {
     padding-left: 0;
     padding-right: 10px;
@@ -52,7 +51,6 @@ table {
     width: 170px;
     margin: 20px 5px;
     border: 1px solid #C3C3C5;
-
 }
 .resalt {
     background-color: #DEDEDE;
@@ -97,6 +95,9 @@ table {
     color: #ADA6A2;
     font-size: 16px;
     font-weight: 300;
+}
+.leaflet-control {
+    display: none;
 }
 
 /*
