@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(250deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-color: #dcd6f7;
 
 }
 .wrapper {
@@ -8,7 +8,7 @@ body {
     align-items: center;
 }
 #section {
-    background-color: rgb(123, 133, 145);
+    background-color: #00a1ab;
 }
 #title {
     padding-top: 10px;
@@ -70,6 +70,15 @@ table {
 }
 #padding {
     padding: 0;
+    background-color: #706c61;
+    margin-bottom: 5px;
+}
+#mapid {
+    border-radius: 10px;
+    margin-bottom: 16px;
+    margin-left: 10px;
+    width: 471px;
+    height: 243px;
 }
 .imgSeven {
     height: 100px;
@@ -80,6 +89,7 @@ table {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #706c61;
 }
 .maxMin {
     display: flex;
@@ -150,18 +160,11 @@ Finish index page, and start the aviation page
     list-style: none;
     padding: 0;
 }
-#mapid {
-    border-radius: 10px;
-    margin-bottom: 16px;
-    margin-left: 10px;
-    width: 471px;
-    height: 243px;
-}
-#padding {
-    background-color: #ADADAD;
-    margin-bottom: 5px;
-}
+
 @media only screen and (max-width: 768px) {
+    #section {
+        width: 95%;
+    }
     #imgWeather {
         height: 100px;
         width: 100px;
