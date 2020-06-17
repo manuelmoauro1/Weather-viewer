@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/" + json.weather[0].icon + "@4x.png";
         document.getElementById("title").innerHTML = json.name + ", " + json.sys.country;
         document.getElementById("temperature").innerHTML = json.main.temp + "°C";
-        document.getElementById("thermalSensation").innerHTML = "TS " + json.main.feels_like + "°C";
+        document.getElementById("thermalSensation").innerHTML = "Feels like " + json.main.feels_like + "°C";
         document.getElementById("liteDescription").innerHTML = json.weather[0].description;
         document.getElementById("pressure").innerHTML = json.main.pressure + " Hpa";
         document.getElementById("humidity").innerHTML = json.main.humidity + "%";
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("imgWeather").src = "http://openweathermap.org/img/wn/" + json.weather[0].icon + "@4x.png";
         document.getElementById("title").innerHTML = json.name + ", " + json.sys.country;
         document.getElementById("temperature").innerHTML = json.main.temp + "°C";
-        document.getElementById("thermalSensation").innerHTML = "TS " + json.main.feels_like + "°C";
+        document.getElementById("thermalSensation").innerHTML = "Feels like " + json.main.feels_like + "°C";
         document.getElementById("liteDescription").innerHTML = json.weather[0].description;
         document.getElementById("pressure").innerHTML = json.main.pressure + " Hpa";
         document.getElementById("humidity").innerHTML = json.main.humidity + "%";
