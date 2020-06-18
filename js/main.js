@@ -49,9 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let inputUser = document.getElementById("inputUser").value;
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + inputUser + "&appid=667de518308564633d6ab9389577a4bf&units=metric";
     try {
-      let response = await fetch(url, {
-        "mode": "cors"
-      });
+      let response = await fetch(url);
       if (response.ok) {
         let json = await response.json();
 
@@ -78,9 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const url = "https://api.openweathermap.org/data/2.5/onecall?lat=" + latitude + "&lon=" + longitude + "&appid=667de518308564633d6ab9389577a4bf&units=metric";
 
     try {
-      let response = await fetch(url, {
-        "mode": "cors"
-      });
+      let response = await fetch(url);
       if (response.ok) {
         let json = await response.json();
 
