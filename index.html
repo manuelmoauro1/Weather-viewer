@@ -34,6 +34,8 @@
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
     crossorigin=""></script>
   <link rel="stylesheet" href="css/styles.css">
+  <!--Animate css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
 
 <body id="body">
@@ -66,7 +68,7 @@
   </nav>
 
   <article id="hidden" class="hidden">
-    <section id="section" class="card mb-3" style="max-width: 540px;">
+    <section id="section" class="card mb-3 animate__animated animate__backInLeft" style="max-width: 540px;">
       <div class="row no-gutters">
         <div class="col-md-4">
           <img id="imgWeather" src="" class="card-img" alt="..." />
@@ -96,11 +98,11 @@
         </div>
       </div>
     </section>
-    <div id="mapid">
+    <div id="mapid" class="animate__animated animate__backInRight">
 
     </div>
   </article>
-  <div class="btn-7">
+  <div class="btn-7 animate__animated animate__bounceInDown" >
     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
       aria-expanded="false" aria-controls="collapseExample"> 7 days forecast </button>
   </div>
