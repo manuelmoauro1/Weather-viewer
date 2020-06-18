@@ -1,6 +1,9 @@
 body {
-    background-color: #dcd6f7;
+    background-color: #888888;
 
+}
+#bodyAv {
+    background-color: #d4ebd0;
 }
 .wrapper {
     display: flex;
@@ -8,7 +11,8 @@ body {
     align-items: center;
 }
 #section {
-    background-color: #00a1ab;
+    background-color: rgb(197, 195, 195);
+    width: 600px;
 }
 #title {
     padding-top: 10px;
@@ -25,7 +29,7 @@ body {
     margin: 0;
 }
 .thermalSensation {
-    color: #C3C3C5;
+    color: #383838;
     font-family: sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -50,13 +54,13 @@ div .align {
 table {
     width: 170px;
     margin: 20px 5px;
-    border: 1px solid #C3C3C5;
+    border: 1px solid black;
 }
 .resalt {
-    background-color: #DEDEDE;
+    background-color: #ffd3b6;
 }
 .noResalt {
-    background-color: #F9F9F9;
+    background-color: #ffaaa5;
 }
 .hidden {
     display: none;
@@ -70,7 +74,7 @@ table {
 }
 #padding {
     padding: 0;
-    background-color: #706c61;
+    background-color: rgb(206, 206, 206);
     margin-bottom: 5px;
 }
 #mapid {
@@ -78,7 +82,7 @@ table {
     margin-bottom: 16px;
     margin-left: 10px;
     width: 471px;
-    height: 243px;
+    height: 267px;
 }
 .imgSeven {
     height: 100px;
@@ -89,7 +93,7 @@ table {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #706c61;
+    background-color: rgb(206, 206, 206);
 }
 .maxMin {
     display: flex;
@@ -102,9 +106,9 @@ table {
     font-weight: 300;
 }
 .minT {
-    color: #ADA6A2;
+    color: #4e4d4d;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: bold;
 }
 .leaflet-control {
     display: none;
@@ -155,6 +159,7 @@ Finish index page, and start the aviation page
 }
 .spanDescription {
     font-weight: bold;
+    text-align: center;
 }
 .list {
     list-style: none;
