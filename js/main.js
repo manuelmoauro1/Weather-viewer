@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // All the lines below are to get te current weather, with the user location and with the input.
   async function obtenerSegunUbicacion(latitude, longitude) {
-    const url = "http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&appid=667de518308564633d6ab9389577a4bf&units=metric";
+    const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&appid=667de518308564633d6ab9389577a4bf&units=metric";
 
     try {
       let response = await fetch(url);
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function obtenerSegunInput() {
     let inputUser = document.getElementById("inputUser").value;
-    const url = "http://api.openweathermap.org/data/2.5/weather?q=" + inputUser + "&appid=667de518308564633d6ab9389577a4bf&units=metric";
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + inputUser + "&appid=667de518308564633d6ab9389577a4bf&units=metric";
     try {
       let response = await fetch(url, {
         "mode": "cors"
