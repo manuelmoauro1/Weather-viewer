@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       navigator.geolocation.getCurrentPosition(function (position) {
         let latitude = position.coords.latitude;
         let longitude = position.coords.longitude;
-        setTimeout(function() {mapa(latitude, longitude)}, 700);
+        setTimeout(function() {mapa(latitude, longitude)}, 800);
         obtenerSegunUbicacion(latitude, longitude);
 
       });
